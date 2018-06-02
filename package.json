@@ -1,0 +1,32 @@
+{
+	"name": "typeormbug",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"migration:generate": "node_modules/.bin/ts-node node_modules/.bin/typeorm migration:generate -n update",
+		"schema:sync": "node_modules/.bin/ts-node node_modules/.bin/typeorm schema:sync",
+		"schema:drop": "node_modules/.bin/ts-node node_modules/.bin/typeorm schema:drop",
+		"start": "ts-node src/index.ts"
+	},
+	"author": "",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/KamGor/typeormBug.git"
+	},
+	"bugs": {
+		"url": "https://github.com/KamGor/typeormBug/issues"
+	},
+	"homepage": "https://github.com/KamGor/typeormBug#readme",
+	"description": "",
+	"devDependencies": {
+		"@types/node": "^8.0.29",
+		"ts-node": "3.3.0",
+		"typescript": "2.5.2"
+	},
+	"dependencies": {
+		"pg": "^7.4.3",
+		"reflect-metadata": "^0.1.10",
+		"typeorm": "0.2.6"
+	}
+}
